@@ -43,9 +43,10 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: ["Santeri Mikkola", "Santeri Mikkola"],
+        typeSpeed: 200,
+        wait: true,
+        backSpeed: 140,
         loop: true
     });
 
