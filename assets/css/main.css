@@ -133,16 +133,20 @@ footer, header, hgroup, menu, section {
 		z-index: 999;
 		padding: 30px 0;
 		font-family: 'Ubuntu', sans-serif;
+		text-align: center;
 		transition: all 0.3s ease;
 	}
 	.navbar.sticky{
+		height: 85px;
 		padding: 0px 0;
 		background: rgb(20, 123, 220);
+		text-align: center;
 	}
 	.navbar .max-width{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		text-align: center;
 	}
 	.navbar .logo a{
 		color: #fff;
@@ -164,13 +168,16 @@ footer, header, hgroup, menu, section {
 	.navbar .menu li{
 		list-style: none;
 		display: inline-block;
+		text-align: center;
 	}
 	.navbar .menu li a{
 		display: block;
 		color: #fff;
-		font-size: 18px;
-		font-weight: 500;
+		font-size: 22px;
+		text-align: center;
+		font-weight: 550;
 		margin-left: 25px;
+		margin-top: 20px;
 		transition: color 0.3s ease;
 	}
 	.navbar .menu li a:hover{
@@ -183,9 +190,10 @@ footer, header, hgroup, menu, section {
 	/* menu btn styling */
 	.menu-btn{
 		color: #fff;
-		font-size: 23px;
+		font-size: 28px;
 		cursor: pointer;
 		display: none;
+		text-align: center;
 	}
 	.scroll-up-btn{
 		position: fixed;
@@ -607,16 +615,36 @@ footer, header, hgroup, menu, section {
 	
 	
 	/* responsive media query start */
+	@media (max-width: 1680px) {
+		.max-width{
+			padding: 0 90px;
+		}
+	}
+	@media (max-width: 1580px) {
+		.max-width{
+			padding: 0 200px;
+		}
+	}
+	@media (max-width: 1580px) {
+		.max-width{
+			padding: 0 200px;
+		}
+	}
+
 	@media (max-width: 1104px) {
 		.about .about-content .left img{
 			height: 350px;
 			width: 350px;
 		}
+		.max-width{
+			max-width: 1080px;
+			padding: 0 210px;
+		}
 	}
 	
 	@media (max-width: 991px) {
 		.max-width{
-			padding: 0 50px;
+			padding: 0 200px;
 		}
 	}
 	@media (max-width: 947px){
@@ -660,7 +688,11 @@ footer, header, hgroup, menu, section {
 			padding: 10px 30px;
 		}
 		.max-width{
+			padding: 0 45px;
 			max-width: 930px;
+		}
+		.navbar .logo a{
+			padding: 0 165px;
 		}
 		.about .about-content .column{
 			width: 100%;
@@ -686,7 +718,7 @@ footer, header, hgroup, menu, section {
 	
 	@media (max-width: 690px) {
 		.max-width{
-			padding: 0 23px;
+			padding: 0 45px;
 		}
 		.home .home-content .text-2{
 			font-size: 60px;
@@ -730,6 +762,11 @@ footer, header, hgroup, menu, section {
 			width: 35px;
 			font-size: 23px;
 			line-height: 38px;
+		}
+	}
+	@media (max-width: 480px) {
+		.max-width{
+			padding: 0 20px;
 		}
 	}
 	
@@ -1204,6 +1241,8 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight: bold;
 	}
 
 		ul.actions li {
@@ -1218,6 +1257,11 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+			border: 2px;
+			border-style: solid;
+  			border-color: rgb(20, 123, 220);
+  			border-radius: 12px;
+  			padding: 1px;
 		}
 
 			ul.actions.special li:first-child {
@@ -1476,6 +1520,14 @@ input, select, textarea {
 				color: #0c0708;
 				font-family: Poppins, normal;
 				font-size: 30px;
+			}
+			header.major > p span {
+				margin-top: 0;
+				text-align: center;
+				color: #0c0708;
+				font-family: Ubuntu, normal;
+				font-size: 25px;
+				text-decoration: underline;
 			}
 
 			header.major > .date {
@@ -2307,9 +2359,16 @@ input, select, textarea {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
+				font-family: Ubuntu, sans-serif;
+			}
+			#main > .post header.major h2 {
+				font-size: 2.3rem;
+				line-height: 1.1;
+				margin: 0 0 2rem 0;
+				font-family: Ubuntu, sans-serif;
 			}
 
 			#main > .post.featured {
@@ -2326,6 +2385,12 @@ input, select, textarea {
 			}
 
 			@media screen and (max-width: 736px) {
+				.navbar .logo a{
+					position: fixed;
+					height: 100vh;
+					width: 100%;
+					left: -100%;
+				}
 
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
@@ -3230,7 +3295,7 @@ input, select, textarea {
 			font-size: 1.8rem;
 		}
 		header.minor > h1 {
-			margin-bottom: -80px;
+			
 			text-align: center;
 			color: #1f1819;
 			font-family: Ubuntu, sans-serif;
@@ -3272,9 +3337,62 @@ input, select, textarea {
 		header.minor {
 			margin: 0 0 2rem 0;
 		}
+		header.minor > p {
+			margin-bottom: 230px;
+			text-align: center;
+			color: #9c1e38;
+			font-family: Ubuntu, sans-serif;
+			font-size: 1.3rem;
+		}
+		header.minor > h1 {
+			text-align: center;
+			color: #1f1819;
+			font-family: Ubuntu, sans-serif;
+			font-size: 1,25rem;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		header.minor {
+			margin: 0 0 2rem 0;
+		}
+		header.minor > p {
+			margin-bottom: 230px;
+			text-align: center;
+			color: #9c1e38;
+			font-family: Ubuntu, sans-serif;
+			font-size: 1.3rem;
+		}
+		header.minor > h1 {
+			text-align: center;
+			color: #1f1819;
+			font-family: Ubuntu, sans-serif;
+			font-size: 1,25rem;
+		}
 
 	}
 
 header.minor .date:before, header.minor .date:after {
 	border-top-color: #eeeeee;
+}
+
+
+.header2{
+	font-family: Poppins, sans-serif;
+	text-align: justify;
+	
+}
+.header2 span {
+	color:rgb(20, 123, 220)
+	
+}
+.lol{
+	padding: 3rem 4rem 1rem 4rem ;
+	border-top: solid 2px #e2e2e2;
+	
+}
+h2 span{
+	color:rgb(20, 123, 220)
 }
