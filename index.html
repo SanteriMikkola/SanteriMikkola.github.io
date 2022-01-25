@@ -16,6 +16,14 @@
 			.noteAppImg{
 				width: 70%;
 			}
+			.test{
+				font-family: Ubuntu, sans-serif;
+				font-size: 2rem;
+				font-weight: bold;
+				text-decoration: none;
+				outline: none;
+				border: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -46,7 +54,7 @@
 								<header class="major">
 									<h1>Welcome to my portfolio</h1>
 									<h2>I'm <span class="typing-2"></span></h2>
-									<p>Here you see my projects and here you will learn something about me.<br><span> These projects have been implemented with C# in the Unity environment</span></p>
+									<p>Here you see my projects and you will learn something about me.<br><span> These projects have been implemented with C# in the Unity environment</span></p>
 								</header>
 								
 								</ul>
@@ -56,9 +64,19 @@
 								<article>
 									<header>
 										
-										<h2><a href="https://github.com/SanteriMikkola/SpinWheel_Game">SpinWheel</a></h2>
+										<h2><a data-modal-target="#modal">SpinWheel</a></h2>
 									</header>
-									<a href="https://github.com/SanteriMikkola/SpinWheel_Game" class="image fit"><img src="images/SpinWheel_InGame.png" alt="" /></a>
+									<a data-modal-target="#modal" class="image fit"><img src="images/SpinWheel_InGame.png" alt="" /></a>
+									<div class="modal" id="modal">
+										<div class="modal-header">
+										  <div class="test">SpinWheel</div>
+										  <button data-close-button class="close-button">&times;</button>
+										</div>
+										<div class="modal-body">
+											<p class="lol"><span class="image left"><img src="images/SanteriMikkola.jpg" alt="" /></span><ul><li>Hands-on C# experience</li><li>SQL experience</li><li>Game engines: Unity</li><li>Some C experience</li><li>Version control: Git using Git Extensions and Bash</li><li>Photoshop experience</li><li>Some blender experience</li><li>Some HTML, CSS and JavaScript experience</li><li>PC building experience</li><li>Project planning tool: Trello</li></ul></p>
+										</div>
+									  </div>
+									  <div id="overlay"></div>
 									<p>SpinWheel the game of winners. Game will be played by coins. When you win you will earn more coins or if you are unlucky guy and there's no matches you lose coins. Also you can gain coins in the Daily Reward it will be available in every 12 hours. Bet can be 100, 500, 2000 or 5000 coins. SpinWheel include music and win-effect sound which volume you can controll in settings. I made all in this project programming, graphics, gameobjects etc.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/SanteriMikkola/SpinWheel_Game" class="button">Check more in GitHub!</a></li>
@@ -67,9 +85,19 @@
 								<article>
 									<header>
 																		
-										<h2><a href="https://github.com/SanteriMikkola/2D-projekti">BallJumper</a></h2>
+										<h2><a data-modal-target="#modal2">BallJumper</a></h2>
 									</header>
-									<a href="https://github.com/SanteriMikkola/2D-projekti" class="image fit"><img src="images/BallJumper.PNG" alt="" /></a>
+									<a data-modal-target="#modal2" class="image fit"><img src="images/BallJumper.PNG" alt="" /></a>
+									<div class="modal" id="modal2">
+										<div class="modal-header">
+										  <div class="test">BallJumper</div>
+										  <button data-close-button class="close-button">&times;</button>
+										</div>
+										<div class="modal-body">
+										  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+										</div>
+									  </div>
+									  <div id="overlay"></div>
 									<p>BallJumper is a 2D-Platformer game. There is two levels, the first one is easier than the second one. In the game, player tries to complete the level as fast as he can and collect the coins as much as possible. The player have movement mechanics and jump mechanics. I made all of in this project, but not graphics and gameobjects because we used ready-made assets in this project.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/SanteriMikkola/2D-projekti" class="button">Check more in GitHub!</a></li>
