@@ -3502,6 +3502,7 @@ h2 span{
 .videoControll {
 	max-width: 865px;
 	width: 565px;
+	height: 415px;
 }
 
 /*@media screen and (max-width: 768px) {
