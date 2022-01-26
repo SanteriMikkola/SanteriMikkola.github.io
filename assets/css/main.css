@@ -3479,3 +3479,67 @@ h2 span{
 	opacity: 1;
 	pointer-events: all;
   }
+
+  @media screen and (min-width: 1440px) {
+
+	.modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		transition: 200ms ease-in-out;
+		width: 800px;
+		max-width: 80%;
+	}
+}
+@media screen and (min-width: 1440px) {
+
+	.videoControll {
+		width: 765px !important;
+	}
+}
+
+.videoControll {
+	max-width: 865px;
+	width: 565px;
+}
+
+/*@media screen and (max-width: 768px) {
+	
+	.videoControll{
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 730px) {
+	
+	.videoControll{
+		padding: 0 40px;
+	}
+}
+@media screen and (max-width: 690px) {
+	
+	.videoControll{
+		padding: 0 70px;
+	}
+	.modal-body {
+		display: inline-flex;
+		align-items: ;
+		padding: 10px 15px;
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 648px) {
+	
+	.videoControll{
+		padding: 0 100px;
+	}
+}
+@media screen and (max-width: 608px) {
+	
+	.videoControll{
+		padding: 0 150px;
+	}
+}*/
