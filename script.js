@@ -34,13 +34,13 @@ $(document).ready(function(){
     });
     
     // typing text animation script
-    var typed = new Typed(".typing", {
+    /*var typed = new Typed(".typing", {
         strings: ["folio", "afolio", "efeuille", "följ", "folio", "efølje", "föy", "afoglio"],
         typeSpeed: 200,
         wait: true,
         backSpeed: 130,
         loop: true
-    });
+    });*/
 
     var typed = new Typed(".typing-2", {
         strings: ["Santeri Mikkola", "Santeri Mikkola"],
