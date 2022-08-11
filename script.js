@@ -34,12 +34,9 @@ $(document).ready(function(){
     });
     
     // typing text animation script
-    /*var typed = new Typed(".typing", {
-        strings: ["folio", "afolio", "efeuille", "följ", "folio", "efølje", "föy", "afoglio"],
-        typeSpeed: 200,
-        wait: true,
-        backSpeed: 130,
-        loop: true
+    /*var typed = new Typed(".typing_studies_Once", {
+        strings: ["Studies"],
+        typeSpeed: 200
     });*/
 
     var typed = new Typed(".typing-2", {
@@ -110,4 +107,6 @@ $(document).ready(function(){
     modal.classList.remove('active')
     overlay.classList.remove('active')
     }
+
+
 });
