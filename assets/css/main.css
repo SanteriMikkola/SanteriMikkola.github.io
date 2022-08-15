@@ -2074,9 +2074,9 @@ input, select, textarea {
 		#slider {
 			position: relative;
 			width: 700px;
-			height: 465px;
+			height: 500px;
 			margin: 0 auto;
-			width: calc(50% - 2rem);
+			width: calc(100% - 4rem);
 			max-width: 72rem;
 			z-index: 2;
 			align-items: center;
