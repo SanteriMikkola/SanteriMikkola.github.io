@@ -2107,7 +2107,7 @@ input, select, textarea {
 			width: 700px;
 			height: 455px;
 			margin: 0 auto;
-			margin-top: 5px;
+			margin-top: 10px;
 			margin-left: 90px;
 		}
 
@@ -2527,7 +2527,23 @@ input, select, textarea {
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;
+				border-bottom-width: 2px;
+				border-right-width: 2px;
 				text-align: center;
+			}
+			#main > .posts  > .arcl2 {
+				border-color: #eeeeee;
+				border-left-width: 2px;
+				border-style: solid;
+				border-top-width: 2px;
+				border-bottom-width: 4px;
+				border-right-width: 4px;
+				text-align: center;
+			}
+			#main > .posts > article > ul{
+				text-align: center;
+				display: table;
+  				margin: 0 auto;
 			}
 
 				#main > .posts > article > :last-child {
