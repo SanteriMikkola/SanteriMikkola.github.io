@@ -3594,12 +3594,73 @@ h2 span{
 	.videoControll {
 		width: 765px !important;
 	}
+
+	.videoControll_m1 {
+		width: 765px !important;
+	}
+
+	.videoControll_m2 {
+		width: 765px !important;
+	}
 }
 
 .videoControll {
 	max-width: 865px;
 	width: 565px;
 	height: 415px;
+}
+
+.videoSlider {
+	position: relative;
+	top: 0;
+    left: 0;
+}
+
+#videoSlider #vPrev, #videoSlider #vNext {
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	font-size: 2rem;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	transform: translateY(-50%);
+	transition: all 150ms ease;
+}
+#videoSlider #vPrev {
+	left: 10px;
+}
+#videoSlider #vNext {
+	right: 10px;
+ }
+#videoSlider #vPrev:hover, #videoSlider #vNext:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	text-shadow: 0;
+}
+
+.videoControll_m1 {
+	max-width: 865px;
+	width: 565px;
+	height: 415px;
+	position: relative;
+    top: 0;
+    left: 0;
+}
+
+.videoControll_m2 {
+	max-width: 865px;
+	width: 565px;
+	height: 415px;
+	position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+	display: none;
 }
 
 /*@media screen and (max-width: 768px) {

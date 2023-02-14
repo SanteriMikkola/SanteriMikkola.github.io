@@ -123,7 +123,7 @@
 										</div>
 										<div class="modal-body">
 											<iframe class="videoControll"
-												src="">
+												src="https://www.youtube.com/embed/B-EO6rM0HNA">
 											</iframe>
 											<p><ul><li>Code language: C#</li><li>Game engine: Unity</li><li>Platform: PC</li><li>Project-type: Team</li></ul></p>
 										</div>
@@ -133,6 +133,37 @@
 									<ul class="actions special">
 										<li><a href="https://fakebugsoftinteractive.itch.io/crazy-crash-rally-drive" class="button">Check more in itch.io!</a></li>
 									</ul>
+								</article>
+								<article class="arcl2">
+									<header>
+										
+										<h2><a data-modal-target="#modal4">Teach Robot Dog</a></h2>
+									</header>
+									<a data-modal-target="#modal4" class="image fit"><img src="images/fablabRoom.png" alt="" /></a>
+									<div class="modal" id="modal4">
+										<div class="modal-header">
+										  <div class="test">Teach Robot Dog</div>
+										  <button data-close-button class="close-button">&times;</button>
+										</div>
+										<div class="modal-body">
+											<div class="videoSlider" id="videoSlider">
+												<iframe class="videoControll_m1" id="video1"
+													src="https://www.youtube.com/embed/ZaYjrxPQIbw?mute=1">
+												</iframe>
+												<iframe class="hidden" id="video2"
+													src="https://www.youtube.com/embed/Rg5RmrxDLIs?mute=1">
+												</iframe>
+
+												<a id="vPrev" >&#8810;</a>
+												<a id="vNext" >&#8811;</a>
+											</div>
+
+											<p><ul><li>Code language: C#</li><li>Game engine: Unity</li><li>Platform: PC/Android VR</li><li>Project-type: Team</li></ul></p>
+										</div>
+									  </div>
+									  <div id="overlay"></div>
+									<p>Teach Robot Dog was a game prototype project for a telepresence robot.</p>
+									
 								</article>
 								
 							</section>
@@ -167,10 +198,10 @@
 									<p></p>
 								</header>
 								<p class="header3">Studies</p>
-								<p class="header2">I studying software development in OSAO Kaukovainio, Technic unit.<br><span>And I'm specialized in game development.</span><br>In addition to the vocational school,<br><span>I have completed fairway studies at the Oulu University of Applied Sciences. (Oamk)</span></p>
+								<p class="header2">I'm a recent graduate software development in OSAO Kaukovainio, Technic unit.<br><span>And I'm specialized in game development.</span><br>In addition to the vocational school,<br><span>I have completed fairway studies at the Oulu University of Applied Sciences. (Oamk)</span></p>
 								<p class="lol"><span class="image left"><img src="images/santeri_mikkola.jpg" alt="" /></span><ul><li>Hands-on C# experience</li><li>SQL experience</li><li>Game engines: Unity</li><li>Platforms: Windows and Android</li><li>Some C experience</li><li>Version control: Git using Git Extensions and Bash</li><li>Photoshop experience</li><li>Some blender experience</li><li>Some HTML, CSS and JavaScript experience</li><li>PC building experience</li><li>Project planning tool: Trello</li></ul></p>
 
-								<p><br><br><br>Over the past two years, I have gained experience especially in game development including programming, development tools, designing processes, 3D modeling, UI development, AI programming, VR and multiplayer development. Also, I have some experience with web development and relational databases, photo editing, virtual computers, and PC building.</p>
+								<p><br><br><br>Over the past three years, I have gained experience especially in game development including programming, development tools, designing processes, 3D modeling, UI development, AI programming, VR and multiplayer development. Also, I have some experience with web development, databases, photo editing, virtual computers, and PC building.</p>
 								<p></p>
 								<p>In my free time, I like to play games, walk with dogs, go to the gym and learn new skills.</p>
 							</section>
@@ -268,12 +299,18 @@
 			var responsiveSlider = function() {
 
 			var slider = document.getElementById("slider");
+			var videoSlider = document.getElementById("videoSlider");
 			var sliderWidth = slider.offsetWidth;
+			var videoSliderWidth = videoSlider.offsetWidth;
 			var slideList = document.getElementById("slideWrap");
 			var count = 1;
 			var items = slideList.querySelectorAll("li").length;
 			var prev = document.getElementById("prev");
+			var vPrev = document.getElementById("vPrev");
 			var next = document.getElementById("next");
+			var vNext = document.getElementById("vNext");
+
+			
 
 			window.addEventListener('resize', function() {
 			sliderWidth = slider.offsetWidth;
@@ -307,18 +344,51 @@
 			nextSlide();
 			});
 
+			vNext.addEventListener("click", function() {
+				document.getElementById("video2").classList.remove('hidden');
+				document.getElementById("video2").classList.add('videoControll_m2');
+
+				var iframes = document.getElementById("videoSlider").querySelectorAll('iframe');
+
+				for (let i = 0; i < iframes.length; i++) {
+					if (iframes[i] !== null) {
+					var temp = iframes[i].src;
+					iframes[i].src = temp;
+					}
+				}
+				document.getElementById("video1").classList.remove('videoControll_m1');
+				document.getElementById("video1").classList.add('hidden');
+			});
+
 			prev.addEventListener("click", function() {
 			prevSlide();
 			});
 
+			vPrev.addEventListener("click", function() {
+				document.getElementById("video1").classList.remove('hidden');
+				document.getElementById("video1").classList.add('videoControll_m1');
+				
+				var iframes = document.getElementById("videoSlider").querySelectorAll('iframe');
+
+				for (let i = 0; i < iframes.length; i++) {
+					if (iframes[i] !== null) {
+					var temp = iframes[i].src;
+					iframes[i].src = temp;
+					}
+				}
+
+				document.getElementById("video2").classList.remove('videoControll_m2');
+				document.getElementById("video2").classList.add('hidden');
+			});
+
 			setInterval(function() {
 			nextSlide()
-			}, 8000);
+			}, 10000);
 
 			};
 
 			window.onload = function() {
-			responsiveSlider();  
+			responsiveSlider();
 			}
 
 		</script>
