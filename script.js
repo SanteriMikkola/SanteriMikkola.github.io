@@ -100,12 +100,34 @@ $(document).ready(function(){
     if (modal == null) return
     modal.classList.add('active')
     overlay.classList.add('active')
+    disableScroll();
+    document.body.classList.add("stop-scrolling");
     }
 
     function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
     overlay.classList.remove('active')
+    enableScroll();
+    document.body.classList.remove("stop-scrolling");
+    }
+
+    function disableScroll() {
+        // Get the current page scroll position
+        scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft,
+      
+            // if any scroll is attempted,
+            // set this to the previous value
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+    }
+      
+    function enableScroll() {
+        window.onscroll = function() {};
     }
 
 
