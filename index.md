@@ -57,8 +57,34 @@ print("Hello Markdown!")
 
 ## x86 emulator
 
+<!-- Small window for emulator (test) -->
+<div class="v86-embed">
+  <iframe
+    src="./wasm/index.html"
+    title="WASM x86 emulator (v86)"
+    loading="lazy">
+  </iframe>
+</div>
+
+<style>
+  .v86-embed {
+    max-width: 720px;
+    height: 420px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  .v86-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  @media (max-width: 640px) {
+    .v86-embed { height: 320px; }
+  }
+</style>
+
+> If the upper window doesn't work, use this.
+
 [Open my WASM page](./wasm/index.html)
-
-> If embedding doesn't work, use the link.
-
-**Link:** <https://copy.sh/v86/>
