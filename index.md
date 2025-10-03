@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Free choice extra assignment – bundle E
 
 The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
@@ -30,6 +34,7 @@ The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
 3. Third item
 
 ### Table
+
 | Name   | Age | City      |
 |--------|----:|-----------|
 | Minna  |  41 | Jyväskylä |
