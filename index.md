@@ -12,13 +12,18 @@ The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
 
 ## Screenshots
 
-![Assignment](./images/assignment.png "Assignment")
-![Repository created](./images/createdRepo.png "Repository created")
-![Site coded](./images/codedSite.png "Site coded")
-![WASM x86 emulator](./images/wasm_x86_emulator.png "WASM x86 emulator")
-![WASM index.html x86 emulator](./images/wasm_indexHTML_x86_emulator.png "WASM index.html x86 emulator")
-![Emulator window coded](./images/coded_emulatorWindow.png "Emulator window coded")
-![Emulator window](./images/emulatorWindow.png "Emulator window")
+<details>
+  <summary>Click to expand screenshots</summary>
+
+  ![Assignment](./images/assignment.png "Assignment")  
+  ![Repository created](./images/createdRepo.png "Repository created")  
+  ![Site coded](./images/codedSite.png "Site coded")  
+  ![WASM x86 emulator](./images/wasm_x86_emulator.png "WASM x86 emulator")  
+  ![WASM index.html x86 emulator](./images/wasm_indexHTML_x86_emulator.png "WASM index.html x86 emulator")  
+  ![Emulator window coded](./images/coded_emulatorWindow.png "Emulator window coded")  
+  ![Emulator window](./images/emulatorWindow.png "Emulator window")  
+
+</details>
 
 ---
 
