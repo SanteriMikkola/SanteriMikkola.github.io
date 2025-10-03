@@ -9,6 +9,8 @@ The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
 ## Screenshots
 
 ![Assignment](./images/assignment.png "Assignment")
+![Repository created](./images/createdRepo.png "Repository created")
+![Site coded](./images/codedSite.png "Site coded")
 
 ---
 
