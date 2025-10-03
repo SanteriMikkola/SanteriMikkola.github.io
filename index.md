@@ -11,6 +11,10 @@ The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
 ![Assignment](./images/assignment.png "Assignment")
 ![Repository created](./images/createdRepo.png "Repository created")
 ![Site coded](./images/codedSite.png "Site coded")
+![WASM x86 emulator](./images/wasm_x86_emulator.png "WASM x86 emulator")
+![WASM index.html x86 emulator](./images/wasm_indexHTML_x86_emulator.png "WASM index.html x86 emulator")
+![Emulator window coded](./images/coded_emulatorWindow.png "Emulator window coded")
+![Emulator window](./images/emulatorWindow.png "Emulator window")
 
 ---
 
@@ -26,21 +30,21 @@ The site is implemented with **GitHub Pages** and written in **Markdown (GFM)**
 3. Third item
 
 ### Table
-| Name   | Age | City     |
-|--------|----:|----------|
+| Name   | Age | City      |
+|--------|----:|-----------|
 | Minna  |  41 | Jyväskylä |
-| Pasi  |  34 | Pori    |
+| Pasi   |  34 | Pori      |
 
 ### Task list
 - [x] Created repo
 - [x] Coded site
-- [ ] Added x86 emulator using WASM
-- [ ] Added screenshots
-- [ ] Published site  
+- [x] Added x86 emulator using WASM
+- [x] Added screenshots
+- [x] Published site  
 
 ### Code block
 ```python
-print("Hello Markdown!")
+print("Hello, hello, hello! Three times always!")
 ```
 
 ### Emojis
@@ -68,7 +72,7 @@ print("Hello Markdown!")
 
 <style>
   .v86-embed {
-    max-width: 720px;
+    max-width: 820px;
     height: 420px;
     border: 1px solid #444;
     border-radius: 8px;
@@ -80,7 +84,7 @@ print("Hello Markdown!")
     height: 100%;
     border: 0;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 740px) {
     .v86-embed { height: 320px; }
   }
 </style>
